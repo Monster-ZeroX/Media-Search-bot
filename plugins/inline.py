@@ -42,9 +42,9 @@ async def answer(bot, query):
     for file in files:
         results.append(
             InlineQueryResultCachedDocument(
-                title=f"Name : {file.file_name}",
+                title=f"{file.file_name}",
                 file_id=file.file_id,
-                caption="**Uploaded By**: FilmsZilla.com\n**Bot By** : @FZBOTS",
+                caption="**Name**: {file.file_name}\nUploaded By**: FilmsZilla.com\n**Bot By** : @FZBOTS",
                 description=f'Name: {file.file_name}\nSize: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
