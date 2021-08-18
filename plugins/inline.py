@@ -45,7 +45,7 @@ async def answer(bot, query):
                 title=f"{file.file_name}",
                 file_id=file.file_id,
                 caption="**Name**: {file.file_name}\nUploaded By**: FilmsZilla.com\n**Bot By** : @FZBOTS",
-                description=f'Name: {file.file_name}\nSize: {get_size(file.file_size)}\nType: {file.file_type}',
+                description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
     if results:
