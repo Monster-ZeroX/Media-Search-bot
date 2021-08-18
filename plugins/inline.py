@@ -44,7 +44,7 @@ async def answer(bot, query):
             InlineQueryResultCachedDocument(
                 title=f"{file.file_name}",
                 file_id=file.file_id,
-                caption="**Name**: {file.file_name}\n**Uploaded By**: FilmsZilla.com\n**Bot By** : @FZBOTS",
+                caption=f"**Name**: {file.file_name}\n**Uploaded By**: FilmsZilla.com\n**Bot By** : @FZBOTS",
                 description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
