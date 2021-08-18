@@ -42,10 +42,10 @@ async def answer(bot, query):
     for file in files:
         results.append(
             InlineQueryResultCachedDocument(
-                title=file.file_name,
+                title=f"Name : {file.fille_name}",
                 file_id=file.file_id,
                 caption="**Uploaded By**: FilmsZilla.com\n**Bot By** : @FZBOTS",
-                description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
+                description=f'Name: {file.filde_name}\nSize: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
     if results:
